@@ -3,7 +3,7 @@
        ```js
        FATAL ERROR: CALL_AND_RETRY_LAST Allocation failed - JavaScript heap out of memory
        ```
-   vue2的项目修改方法在`package.json`文件加上 `--max_old_space_size=4096`：
+   vue2的项目：修改方法在`package.json`文件加上 `--max_old_space_size=4096`：
    ```js
      "scripts": {
         "build": "node --max_old_space_size=4096 build/build.js",
@@ -13,4 +13,4 @@
         "lint": "eslint src/*.{js,vue} --quiet"
       },
    ```
-   
+   vue-cli3的项目：[见此](https://www.npmjs.com/package/increase-memory-limit)
